@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        text-align: center;    }
+    button{
+        font-weight: bolder;
+        border: 5px solid black;
+        border-radius: 20px;
+        padding: 8px;    
+    }
+    #btn1{
+        background: yellow;
+    }
+</style>
+<body>
+    <h1>Click the button to on/of light</h1>
+    <img id="myImage" src="pic_bulboff.gif" width="150px" height="250px">
+
+<p>
+    <button type="button" onclick="light(0)">Light Off</button>
+<button id="btn1" type="button" onclick="light(1)">Light On</button>
+</p>    
+
+    <script>
+    function light(AA) {
+      var pic;
+      if (AA == 0) {
+        pic = "pic_bulboff.gif"
+      }
+       else {
+        pic = "pic_bulbon.gif"
+      }
+      document.getElementById('myImage').src = pic;
+    }
+    </script>
+</body>
+</html>
+<html>
+<body>
